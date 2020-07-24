@@ -1,5 +1,12 @@
 import React from 'react';
+import GlobalStyle from './styles/globalStyles';
+import Header from './containers/header/Header';
 
 export default function App() {
-  return <div className="App">Я хотел TS, но если будут лекции, то можно и взять</div>;
+  return (
+    <div className="App">
+      <GlobalStyle />
+      <Header />
+    </div>
+  );
 }
