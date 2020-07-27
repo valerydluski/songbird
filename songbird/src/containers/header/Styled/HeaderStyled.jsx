@@ -3,7 +3,6 @@ import styled from 'styled-components';
 const HeaderStyled = styled.header`
   height: 100%;
   height: 150px;
-  border-bottom: 2px solid;
   width: 100%;
   max-width: 100vw;
   display: flex;

@@ -6,6 +6,7 @@ const NavigationPanelStyled = styled.ul`
   justify-content: space-between;
   border-radius: 5px;
   overflow: hidden;
+  padding: 0;
 `;
 
 export default NavigationPanelStyled;
