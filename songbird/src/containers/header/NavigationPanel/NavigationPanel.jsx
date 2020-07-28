@@ -1,15 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import NavigationPanelStyled from './Styled/NavigationPanelStyled';
 import { LINKS } from '../../../config';
 import Link from '../../../components/UI/Links/Link';
 
 const NavigationPanel = ({ links }) => {
-  console.log('NavigationPanel -> links', links);
   return (
     <NavigationPanelStyled>
       {links.map((el) => {
-        return <Link name={el.name} />;
+        return <Link name={el.name} key={el.name} />;
       })}
     </NavigationPanelStyled>
   );

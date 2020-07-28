@@ -5,6 +5,9 @@ const TopPlayerStyled = styled.div`
   display: flex;
   place-self: center;
   width: 90%;
+  &div div div div {
+    color: #fff !important;
+  }
 `;
 
 export default TopPlayerStyled;

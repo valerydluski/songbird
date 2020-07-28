@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
 import ScoreContainerStyled from './Styled/ScoreStyled';
 import Score from '../../../components/header/Score';

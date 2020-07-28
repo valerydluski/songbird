@@ -14,9 +14,17 @@ const GlobalStyle = createGlobalStyle`
     background: #E5E5E5;
   }
 
-  .toast-container {
-    font-size: 22px;
+  .rhap_current-time,
+  .rhap_total-time,
+  .rhap_main-controls-button,
+  .rhap_repeat-button,
+  .rhap_volume-button,
+  .rhap_progress-indicator,
+  .rhap_progress-filled {
+    color: #fff;
   }
+
+
 `;
 
 export default GlobalStyle;
