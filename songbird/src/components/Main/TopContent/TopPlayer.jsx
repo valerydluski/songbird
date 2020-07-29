@@ -9,6 +9,7 @@ const TopPlayer = ({ audioSrc }) => {
     <TopPlayerStyled>
       <AudioPlayer
         src={audioSrc}
+        autoPlay={false}
         showJumpControls={false}
         showLoopControl={false}
         style={{ backgroundColor: '#6550de' }}

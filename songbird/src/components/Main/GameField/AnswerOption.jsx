@@ -14,6 +14,12 @@ const AnswerOption = ({ name, answer }) => {
             answer: answer,
           },
         });
+        dispatch({
+          type: 'change_isAnswer',
+          payload: {
+            isAnswer: true,
+          },
+        });
       }}
     >
       {name}

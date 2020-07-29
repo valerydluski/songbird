@@ -5,18 +5,22 @@ import TopImage from './TopImage';
 import TopAnswer from './TopAnswer';
 import TopPlayer from './TopPlayer';
 import { ContextApp } from '../../../store/reducer';
+import { DEFAULT_IMAGE } from '../../../config';
 
 const TopContentContainer = ({ correctAnimal }) => {
   const { state, dispatch } = useContext(ContextApp);
-  console.log('TopContentContainer -> state', state);
   const isCorrectAnswer = () => {
     if (state.answer.name === correctAnimal.name) return state.answer.name;
     return '******';
   };
+  const isCorrectAnswerImage = () => {
+    if (state.answer.name === correctAnimal.name) return state.answer.image;
+    return DEFAULT_IMAGE;
+  };
 
   return (
     <TopContentContainerStyled>
-      <TopImage></TopImage>
+      <TopImage imageSrc={isCorrectAnswerImage()}></TopImage>
       <TopAnswer answerText={isCorrectAnswer()} />
       <TopPlayer audioSrc={correctAnimal.audio} />
     </TopContentContainerStyled>

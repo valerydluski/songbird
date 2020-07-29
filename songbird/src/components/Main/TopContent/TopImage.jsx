@@ -12,11 +12,7 @@ const TopImage = ({ imageSrc }) => {
 };
 
 TopImage.propTypes = {
-  imageSrc: PropTypes.string,
-};
-
-TopImage.defaultProps = {
-  imageSrc: 'https://zelenyjmir.ru/wp-content/uploads/2017/06/Lenivets-2.jpg',
+  imageSrc: PropTypes.string.isRequired,
 };
 
 export default TopImage;

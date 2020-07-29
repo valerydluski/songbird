@@ -5,6 +5,7 @@ import MainStyled from './Styled/MainStyled';
 import TopContentContainer from '../../components/Main/TopContent/TopContentContainer';
 import GameField from '../../components/Main/GameField/GameField';
 import shuffleArray from '../../utils/shuffleArray';
+import ResultField from '../../components/Main/ResultField/ResultField';
 
 const Main = ({ birdsArray }) => {
   const [correctAnimal, changeAnimal] = useState(shuffleArray(birdsArray)[0]);
@@ -13,6 +14,7 @@ const Main = ({ birdsArray }) => {
     <MainStyled>
       <TopContentContainer correctAnimal={correctAnimal} />
       <GameField birdsArray={birdsArray} />
+      <ResultField />
     </MainStyled>
   );
 };

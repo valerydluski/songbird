@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const MainStyled = styled.main`
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 40% 60%;
   grid-template-rows: 40% 50% 10%;
   grid-template-areas:
     'imageAndPlayer imageAndPlayer'
