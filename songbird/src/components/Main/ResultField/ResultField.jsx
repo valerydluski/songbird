@@ -10,7 +10,7 @@ import Description from './Description';
 
 const ResultField = () => {
   const { state, dispatch } = useContext(ContextApp);
-  console.log('ResultField -> state', state);
+
   return (
     <ResultFieldStyled>
       {state.isAnswer ? (
@@ -19,7 +19,7 @@ const ResultField = () => {
           <Name name={state.answer.name} />
           <LatName species={state.answer.species} />
           <TopPlayer audioSrc={state.answer.audio} />
-          <Description description={state.answer.description}/>
+          <Description description={state.answer.description} />
         </>
       ) : (
         <DefaultText />

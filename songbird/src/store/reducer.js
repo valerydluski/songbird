@@ -1,9 +1,14 @@
 import React from 'react';
+import birdsData from '../data/data';
+import shuffleArray from '../utils/shuffleArray';
 export const ContextApp = React.createContext();
 
 export const initialState = {
   answer: {},
   isAnswer: false,
+  level: 0,
+  isCorrect: false,
+  correctAnswer: shuffleArray(birdsData[0])[0],
 };
 
 export const changeAnswer = (state, action) => {
@@ -19,6 +24,16 @@ export const changeAnswer = (state, action) => {
         ...action.payload,
       };
     case 'correct_answer':
+      return {
+        ...state,
+        ...action.payload,
+      };
+    case 'change_level':
+      return {
+        ...state,
+        ...action.payload,
+      };
+    case 'isCorrect':
       return {
         ...state,
         ...action.payload,
