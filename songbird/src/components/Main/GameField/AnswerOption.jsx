@@ -8,18 +8,28 @@ const AnswerOption = ({ name, answer }) => {
   return (
     <AnswerOptionStyled
       onClick={() => {
-        dispatch({
-          type: 'change_answer',
-          payload: {
-            answer: answer,
-          },
-        });
-        dispatch({
-          type: 'change_isAnswer',
-          payload: {
-            isAnswer: true,
-          },
-        });
+        if (!state.isCorrect) {
+          dispatch({
+            type: 'change_answer',
+            payload: {
+              answer: answer,
+            },
+          });
+          dispatch({
+            type: 'change_isAnswer',
+            payload: {
+              isAnswer: true,
+            },
+          });
+          if (name === state.correctAnswer.name) {
+            dispatch({
+              type: 'isCorrect',
+              payload: {
+                isCorrect: true,
+              },
+            });
+          }
+        }
       }}
     >
       {name}

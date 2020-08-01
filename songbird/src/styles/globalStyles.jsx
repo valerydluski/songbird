@@ -14,17 +14,18 @@ const GlobalStyle = createGlobalStyle`
     background: #E5E5E5;
   }
 
-  .rhap_current-time,
-  .rhap_total-time,
-  .rhap_main-controls-button,
-  .rhap_repeat-button,
-  .rhap_volume-button,
-  .rhap_progress-indicator,
-  .rhap_progress-filled {
-    color: #fff;
+  .react-audio-player  {
+    background-color: #6550de;
+    padding: 0.5rem;
+    border-radius: 10px;
+    outline: none;
+    width: 80%;
+    color: #6550de;
   }
 
-
+  .toast-container {
+    font-size: 22px;
+  }
 `;
 
 export default GlobalStyle;
