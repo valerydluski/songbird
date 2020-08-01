@@ -33,6 +33,12 @@ const ButtonContainer = () => {
           isCorrect: false,
         },
       });
+      dispatch({
+        type: 'change_count_answer',
+        payload: {
+          countAnswer: 5,
+        },
+      });
     } else {
       toast.info('Вы не дали верный ответ');
     }

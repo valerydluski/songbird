@@ -9,6 +9,8 @@ export const initialState = {
   level: 0,
   isCorrect: false,
   correctAnswer: shuffleArray(birdsData[0])[0],
+  countAnswer: 5,
+  score: 0,
 };
 
 export const changeAnswer = (state, action) => {
@@ -34,6 +36,16 @@ export const changeAnswer = (state, action) => {
         ...action.payload,
       };
     case 'isCorrect':
+      return {
+        ...state,
+        ...action.payload,
+      };
+    case 'change_count_answer':
+      return {
+        ...state,
+        ...action.payload,
+      };
+    case 'change_score':
       return {
         ...state,
         ...action.payload,

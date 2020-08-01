@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import ScoreStyled from './Styled/ScoreStyled';
+import { ContextApp } from '../../store/reducer';
 
 const Score = () => {
-  return <ScoreStyled>Счёт: 0</ScoreStyled>;
+  const { state } = useContext(ContextApp);
+  return <ScoreStyled>Счёт: {state.score}</ScoreStyled>;
 };
 
 export default Score;
