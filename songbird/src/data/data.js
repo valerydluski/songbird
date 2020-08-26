@@ -1,376 +1,339 @@
+import { LINK_FOR_AUDIO, LINK_FOR_IMG } from '../config';
+
 const birdsData = [
   [
     {
       id: 1,
-      name: 'Африканский лев',
-      species: 'African Lion',
+      name: 'Theory of a Deadman',
+      species: 'Out Of My Head',
       description:
-        'Африканский лев (Panthera leo) – хищник из рода пантер, относится к семейству кошачьих, считается самой крупной кошкой в мире. В 19-20 столетии численность этого вида резко сократилась из-за деятельности человека. Не имея прямых врагов в собственном ареале обитания, львы постоянно уничтожаются браконьерами и любителями сафари.',
-      image:
-        'https://seaworld.com/-/media/seaworld-dotorg/images/animal-bytes/listing-images/mammals/african_lion_357x229.ashx?version=1_201811273259',
-      audio:
-        'https://seaworld.com/-/media/seaworld-dotorg/audio-files/sound-library/lion_1.ashx?version=1_201811134821&la=en&hash=7232CC103347978D2ED052B973F0EE79E28CAABA',
+        'Theory (ex – Theory of a Deadman) — мультиплатиновая рок-группа из Ванкувера, Канада, основанная в 2001 году, один из ключевых проектов лейбла Roadrunner Records. Все альбомы группы получили платиновый статус в Канаде.',
+      image: `${LINK_FOR_IMG}01_01.jpg`,
+      audio: `${LINK_FOR_AUDIO}Theory%20Of%20A%20Deadman%20-%20Out%20Of%20My%20Head.mp3`,
     },
     {
       id: 2,
-      name: 'Медведь',
-      species: 'Ursus',
+      name: '10 Years',
+      species: 'Dead in the Water',
       description:
-        'самый крупный хищник на земле. Это животное относится к классу млекопитающие, отряду хищные, семейству медвежьи, роду медведи. Медведь появился на планете около 6 млн. лет назад и всегда был символом мощи и силы.',
-      image:
-        'https://seaworld.com/-/media/seaworld-dotorg/images/landing-pages/animal-sounds/cinnamon_bear_357x229.ashx?version=1_201811282449',
-      audio:
-        'https://seaworld.com/-/media/seaworld-dotorg/audio-files/sound-library/bear.ashx?version=1_201811134823&la=en&hash=EF7EC380B6FB032DDEE3CEA31A01F27939E6DE63',
+        '10 Years — американская альтернативная группа из города Ноксвилл, штат Теннесси, сформированная в 1999 году.',
+      image: `${LINK_FOR_IMG}01_02.jpg`,
+      audio: `${LINK_FOR_AUDIO}10%20Years%20-%20Dead%20In%20The%20Water.mp3`,
     },
     {
       id: 3,
-      name: 'Шимпанзе',
-      species: 'Pan',
+      name: 'Evanescence',
+      species: 'Bring Me To Life',
       description:
-        'Шимпанзе, также как и человек, имеют группы крови и индивидуальные отпечатки пальцев. Их по ним можно различать – узор никогда не повторяется. Ростом шимпанзе от человека отличаются. Самые крупные самцы не превышают 1.5 метров в высоту. Самки и того ниже – 1,3 метра. Но при этом, шимпанзе очень сильны физически и обладают хорошо развитой мускулатурой.',
-      image:
-        'https://seaworld.com/-/media/seaworld-dotorg/images/animal-bytes/listing-images/bgt-animals/2017_buschgardenstampabay_animals_chimps_357x229.ashx?version=1_201811131403',
-      audio:
-        'https://seaworld.com/-/media/seaworld-dotorg/audio-files/sound-library/chimp.ashx?version=1_201811134822&la=en&hash=0ACF1D14F6F243F811C35227997B85AFAA65A682',
+        'Evanescence — американская рок-группа, основанная в 1995 году вокалисткой Эми Ли и гитаристом Беном Муди. Среди критиков нет единства во мнениях относительно того, как классифицировать музыку Evanescence: как рок или как метал.',
+      image: `${LINK_FOR_IMG}01_03.jpg`,
+      audio: `${LINK_FOR_AUDIO}19%20-%20Bring%20Me%20To%20Life.mp3`,
     },
     {
       id: 4,
-      name: 'Серый волк',
-      species: 'Canis lupus',
+      name: 'Bullet for My Valentine',
+      species: 'The Last Fight',
       description:
-        'Волк — это хищное млекопитающее, которое относится к отряду хищные, семейству псовые (собачьи, волчьи). Русское слово «волк» созвучно с некоторыми славянскими названиями зверя: болгары называют хищника вылк, сербы — вук, украинцы — вовк. Происхождение названия восходит к старославянскому слову «вылкъ», означавшему таскать, уволакивать.',
-      image:
-        'https://seaworld.com/-/media/seaworld-dotorg/images/animal-bytes/listing-images/mammals/gray_wolf_357x229.ashx?version=1_201811273249',
-      audio:
-        'https://seaworld.com/-/media/seaworld-dotorg/audio-files/sound-library/wolf.ashx?version=1_201811134825&la=en&hash=2F14F3CBD32747473B2E0767C84E971516DE0A4D',
+        'Bullet For My Valentine — британская металкор-группа. Была сформирована в 1998 году в городе Бридженд под названием Jeff Killed John. 2003 год стал годом больших перемен касаемо названия, стиля и состава. В результате, название было сменено на нынешнее.',
+      image: `${LINK_FOR_IMG}01_04.jpg`,
+      audio: `${LINK_FOR_AUDIO}Bullet%20For%20My%20Valentine%20-%20The%20Last%20Fight.mp3`,
     },
     {
       id: 5,
-      name: 'Азиатский слон',
+      name: 'Puddle of Mudd',
       species: 'Elephas maximus',
       description:
-        'Азиатские слоны уступают по размерам саванным слонам, однако из размеры также внушительны. Старые самцы достигают массы 5,4 т и роста 2,5—3,5 м. Самцы несколько мельче, и весят в среднем 2,7 т. Самым мелким является подвид с Калимантана, чья масса составляет около 2 т. Длина тела азиатского слона — 5,5—6,4 м, хвоста — 1,2—1,5 м. Хвостовых позвонков 33.',
-      image:
-        'https://seaworld.com/-/media/seaworld-dotorg/images/landing-pages/animal-sounds/asian-elephant_357x229.ashx?version=1_201811285926',
-      audio:
-        'https://seaworld.com/-/media/seaworld-dotorg/audio-files/sound-library/elephant.ashx?version=1_201811134820&la=en&hash=0557BBB893EA6D3FE7D62B6C3CE0427CE7142218',
+        'Puddle of Mudd — американская рок-группа, сформированная в Канзас-Сити, штат Миссури в 1991 году. Группа выпустила 2 независимых и 5 мэйджорных студийных альбомов, последний из которых, «Welcome To Galvania», вышел в сентябре 2019 года.',
+      image: `${LINK_FOR_IMG}01_05.jpg`,
+      audio: `${LINK_FOR_AUDIO}Puddle_of_Mudd-Keep_It_Together.mp3`,
     },
     {
       id: 6,
-      name: 'Белоголовый орлан',
-      species: 'Haliaéetus leucocéphalus',
+      name: 'Green Day',
+      species: 'Boulevard Of Broken Dreams',
       description:
-        'Индейцы чтят белоголового орлана, как божественную птицу, называя его посредником между людьми и Великим Духом, сотворившим Вселенную. В его честь слагают легенды и посвящают ритуалы, изображая на шлемах, столбах, щитах, одежде и посуде. Символ племени ирокезов – орлан, восседающий на сосне.',
-      image:
-        'https://seaworld.com/-/media/seaworld-dotorg/images/animal-bytes/listing-images/bgt-animals/2017_buschgardenstampabay_animals_baldeagle_357x229.ashx?version=1_201811131406',
-      audio:
-        'https://seaworld.com/-/media/seaworld-dotorg/audio-files/sound-library/bald-eagle_2.ashx?version=1_201811134822&la=en&hash=858BD7D49FB66CE64C20E9AD26F308C2840CD4DD',
+        'Green Day — американская панк-рок группа, основанная в 1986 году. Состоит из трёх участников: Билли Джо Армстронга (вокал, гитара), Майка Дёрнта (бас гитара, бэк-вокал) и Тре Кула (ударные).В 2011 году трио было признано лучшей панк-группой в истории музыки по результатам опроса, проведённого журналом Rolling Stone. В 2015 году Green Day были включены в «Зал славы рок-н-ролла».',
+      image: `${LINK_FOR_IMG}01_06.jpg`,
+      audio: `${LINK_FOR_AUDIO}Green%20Day%20-%20Boulevard%20Of%20Broken%20Dreams.mp3`,
     },
   ],
   [
     {
       id: 1,
-      name: 'Бенга́льский тигр',
-      species: 'Panthera tigris tigris',
+      name: 'Imagine Dragons',
+      species: 'Radioactive',
       description:
-        'Отличительной особенностью бенгальского тигра являются втяжного типа, острые и очень длинные когти, а также хорошо опушенный хвост и невероятно мощные челюсти. Кроме всего прочего, хищник имеет отлично развитый слух и зрение, поэтому такие животные способны прекрасно видеть даже в полной темноте. Длина прыжка взрослого тигра составляет 8-9 м, а скорость движения на коротких дистанциях достигает 60 км/ч. Спят взрослые бенгальские тигры примерно семнадцать часов в сутки.',
-      image:
-        'https://seaworld.com/-/media/seaworld-dotorg/images/animal-bytes/listing-images/mammals/bengal_tiger_357x229.ashx?version=1_201811273254',
-      audio:
-        'https://seaworld.com/-/media/seaworld-dotorg/audio-files/sound-library/bengal_tiger.ashx?version=1_201811134819&la=en&hash=E14722662857807E1A2997FB06D2A853777E7F93',
+        '«Imagine Dragons» — американская инди-рок-группа, образованная в 2008 году в городе Лас-Вегас, США. Стали известны после выпуска дебютного студийного альбома Night Visions в сентябре 2012 года. Американский журнал Billboard назвал их самыми яркими новыми звёздами 2013 года и самой большой группой 2017 года, а журнал Rolling Stone назвал их сингл «Radioactive» самым большим рок-хитом года.',
+      image: `${LINK_FOR_IMG}02_01.jpg`,
+      audio: `${LINK_FOR_AUDIO}Imagine%20Dragons%20-%20Radioactive%20(Acoustic).mp3`,
     },
     {
       id: 2,
-      name: 'Грач',
-      species: 'Corvus frugilegus',
+      name: 'Linkin Park',
+      species: 'In The End',
       description:
-        'Грачи очень умные и сообразительные птицы. С помощью клюва они создают и используют простейшие орудия. У грачей развит рефлекс на звуки трактора. Услышав «тарахтение», они летят на звук – трактор пашет землю, значит, в этом месте много корма.',
-      image: 'https://live.staticflickr.com//65535//49347123322_291c86b016.jpg',
-      audio:
-        'https://www.xeno-canto.org/sounds/uploaded/RLRHCUIPIY/XC512540-gawron%20Suble%2019.12.19%20%2012.35.mp3',
+        'Linkin Park — американская рок-группа, основанная в 1996 году под названием Xero и исполняющая музыку преимущественно в стилях альтернативный метал, ню-метал и рэп-метал, альтернативный рок, электроник-рок, поп и поп-рок. Существуя с 2000 года под названием Linkin Park, группа была шесть раз номинирована и два раза удостоилась награды «Грэмми»',
+      image: `${LINK_FOR_IMG}02_02.jpg`,
+      audio: `${LINK_FOR_AUDIO}Linkin%20Park%20-%20In%20the%20End.mp3`,
     },
     {
       id: 3,
-      name: 'Галка',
-      species: 'Coloeus monedula',
+      name: 'Black Veil Brides',
+      species: 'DAYS ARE NUMBERED',
       description:
-        'Слово «галка» произошло из старославянского языка и переводится как «чёрный». Этим словом часто называют воронов или других черных птиц. Латинское название галки «monedula» связывают со словами монета за любовь птицы к блестящим и ярким вещам.',
-      image: 'https://live.staticflickr.com//65535//49237149586_993cf685c5.jpg',
-      audio:
-        'https://www.xeno-canto.org/sounds/uploaded/GYAUIPUVNM/XC510498-Coloeus%20monedula_2019.11.13_11.55_01.mp3',
+        'Black Veil Brides — американская метал-группа из Огайо, основанная в 2006 году. Отличительной чертой группы является необычный сценический образ, вдохновленный Kiss, Mötley Crüe и другими глэм-метал-артистами 1980-х годов.',
+      image: `${LINK_FOR_IMG}02_03.jpg`,
+      audio: `${LINK_FOR_AUDIO}`,
     },
     {
       id: 4,
-      name: 'Певчий дрозд',
-      species: 'Turdus philomelos',
+      name: 'Metallica',
+      species: 'Nothing Else Matters',
       description:
-        'Дрозд — лучший певец из отряда воробьиных. Песня состоит только из красивых звучных свистов и коротких трелей. Чаще всего её можно услышать в утреннее и вечернее время. Поют дрозды в течении всего периода гнездования.',
-      image: 'https://live.staticflickr.com/65535/48979125763_e2534f54bd.jpg',
-      audio:
-        'https://www.xeno-canto.org/sounds/uploaded/BLMSIUFTFU/XC513326-190704_1146_TF-Glogow.mp3',
+        'Metallica — американская метал-группа, образованная в 1981 году, в Лос-Анджелесе. Metallica оказала большое влияние на развитие метала и входит в «большую четвёрку трэш-метала». Альбомы Metallica были проданы в общей сложности в количестве более 110 миллионов экземпляров по всему миру, что делает её одним из самых коммерчески успешных металлических коллективов.',
+      image: `${LINK_FOR_IMG}02_04.jpg`,
+      audio: `${LINK_FOR_AUDIO}Metallica%20-%20Nothing%20else%20matter.mp3`,
     },
     {
       id: 5,
-      name: 'Сорока',
-      species: 'Pica pica',
+      name: 'Muse',
+      species: 'Starlight',
       description:
-        'Сорока очень трудолюбивая птица. Она строит до восьми гнёзд, а потом выбирает из них самое лучшее. Вход в гнездо сорок всегда обращен на юг, чтобы в жилище было теплее. Сороки являются единственными птицами, которые узнают себя в зеркале.',
-      image: 'https://live.staticflickr.com//65535//49360363066_ff02bb6a73.jpg',
-      audio:
-        'https://www.xeno-canto.org/sounds/uploaded/GYAUIPUVNM/XC500868-Pica%20pica2019.08.23_09.18_02.mp3',
+        'Muse — британская рок-группа, образованная в 1994 году в городе Тинмут (графство Девон). Всего Muse выпустили восемь студийных альбомов и два концертных альбома, продажи которых превысили 20 млн, а также стали обладателями наград MTV Europe Music Awards, Q Awards, NME Awards, Brit Awards, Kerrang! Awards, Grammy и других наград, в основном полученных за концертные выступления.',
+      image: `${LINK_FOR_IMG}02_05.jpg`,
+      audio: `${LINK_FOR_AUDIO}Muse-Starlight.mp3`,
     },
     {
       id: 6,
-      name: 'Сойка',
-      species: 'Garrulus glandarius',
+      name: 'My Chemical Romance',
+      species: 'Famous Last Words',
       description:
-        'Когда сойка волнуется, хохолок на её голове взъерошивается. Птица старается создать устрашающее зрелище. Сойки умеют имитировать голоса других птиц, животных и звуки, которые создает человек. На зиму они делают большие запасы желудей и орехов.',
-      image: 'https://live.staticflickr.com//65535//49369678956_9a7465c7f4.jpg',
-      audio:
-        'https://www.xeno-canto.org/sounds/uploaded/TFOGOENSTQ/XC501517-191008_1590%201300.%20Eichelh%C3%A4her%20D%2C%20NW%2C%20LEV.%20Stephan%20Risch.mp3',
+        'My Chemical Romance — американская рок-группа, основанная в конце 2001 года в Ньюарке, Нью-Джерси. Различные критики относили My Chemical Romance к альтернативному року, эмо (что члены группы отрицают) и другим жанрам. В частности, под характеристики этого стиля подходят первые два альбома группы.',
+      image: `${LINK_FOR_IMG}02_06.jpg`,
+      audio: `${LINK_FOR_AUDIO}My%20Chemical%20Romance%20-%20Famous%20Last%20Words.mp3`,
     },
   ],
   [
     {
       id: 1,
-      name: 'Зяблик',
-      species: 'Fringilla coelebs',
+      name: 'J:Морс',
+      species: 'Ледоколы',
       description:
-        'В дикой природе насчитывается 450 видов зябликов. Зимой зяблики ведут стайный образ жизни. Иногда в их семьях можно увидеть воробьев. Запевают зяблики весной, с наступлением брачного периода. Их пение – это заливистые многоминутные рулады.',
-      image: 'https://live.staticflickr.com/65535/49143150817_2d3a2f6c1e.jpg',
-      audio:
-        'https://www.xeno-canto.org/sounds/uploaded/ZNCDXTUOFL/XC512407-150622_03%20zi%C4%99ba%20%282%29.mp3',
+        'J:Морс — белорусская рок-группа, основанная в 1999 году в Минске Владимиром Пугачем и Артёмом Ледовским. Дискография группы насчитывает 8 студийных альбомов, 2 концертных альбома, 2 сингла и несколько сборников.',
+      image: `${LINK_FOR_IMG}03_01.jpg`,
+      audio: `${LINK_FOR_AUDIO}J-Mors%20-%20Ледоколы.mp3`,
     },
     {
       id: 2,
-      name: 'Клёст',
-      species: 'Loxia curvirostra',
+      name: 'Louna',
+      species: 'Штурмуя Небеса',
       description:
-        'Клестов называют «рождественскими» птицами. В естественных условиях они дают потомство зимой – в январе. Эти птицы утепляют свои гнезда мхом и шерстью животных, потому птенцам не холодно. В поисках шишек клесты могут улетать за 3500 км от гнезда.',
-      image: 'https://live.staticflickr.com//65535//49365470123_f2de66bb35.jpg',
-      audio:
-        'https://www.xeno-canto.org/sounds/uploaded/OTVUCEGYZN/XC495381-Kruisbek%20roep%20NHD%20290619.mp3',
+        'Louna — российская рок-группа с женским вокалом. Название образовано от творческого псевдонима вокалистки Лу. Коллектив создан в сентябре 2008 года участниками московской альтернативной группы «Tracktor Bowling» Лусинэ Геворкян с Виталием Демиденко.',
+      image: `${LINK_FOR_IMG}03_02.jpg`,
+      audio: `${LINK_FOR_AUDIO}Louna%20-%20Штурмуя%20небеса.mp3`,
     },
     {
       id: 3,
-      name: 'Горлица',
-      species: 'Streptopelia turtur',
-      description:
-        'Горлица обитает в смешанных и широколиственных лесах, а также в городских парках и поселках. Птицы часто выбирают места жизни рядом с человеком и легко привыкают к людям. Благодаря мелодичному приятному пению горлиц часто разводят в домашних условиях.',
-      image: 'https://live.staticflickr.com/65535/48063004977_84252f9ceb.jpg',
-      audio:
-        'https://www.xeno-canto.org/sounds/uploaded/ZNCDXTUOFL/XC324106-Turkawka_Streptopelia_turtur_Poland_Jarek_Matusiak_2011625_07.mp3',
+      name: 'Lumen',
+      species: 'Одной крови',
+      description: 'Lumen — российская рок-группа из Уфы, основанная в 1998 году.',
+      image: `${LINK_FOR_IMG}03_03.jpg`,
+      audio: `${LINK_FOR_AUDIO}Lumen%20-%20Одной%20Крови.mp3`,
     },
     {
       id: 4,
-      name: 'Дятел',
-      species: 'Dendrocopos major',
+      name: 'Дана Соколова',
+      species: 'Львиное Сердце',
       description:
-        'Дятел – заметная и шумная птица, часто живет рядом с человеком. С середины января до конца июня можно услышать «барабанную дробь» дятлов – трель от вибрации веток под быстрыми ударами клюва птицы. В хорошую погоду дробь слышна в радиусе 1,5 км.',
-      image: 'https://live.staticflickr.com/65535/49339376578_e933426455.jpg',
-      audio:
-        'https://www.xeno-canto.org/sounds/uploaded/ZNCDXTUOFL/XC518928-AB-017%20dzi%C4%99cio%C5%82%20du%C5%BCy%20agresja%20%282%29.mp3',
+        'Дана Соколова — латвийская и российская рок-певица, поэтесса и музыкант, участница лэйбла Black Star, победительница шоу "Молодая кровь" на СТС',
+      image: `${LINK_FOR_IMG}03_04.jpg`,
+      audio: `${LINK_FOR_AUDIO}Дана%20Соколова%20-%20Львиное%20сердце.mp3`,
     },
     {
       id: 5,
-      name: 'Удод',
-      species: 'Upupa epops',
+      name: 'Океан Ельзи',
+      species: 'Без бою',
       description:
-        'Удоды предпочитают жить на открытых ландшафтах с отдельными деревьями или рощами. Наиболее удобными для птицы являются лесостепь и саванна. Удод может выбирать места жительства рядом с человеком: пастбища, виноградники, фруктовые сады.',
-      image: 'https://live.staticflickr.com//65535//49226383598_6f8be86a06.jpg',
-      audio: 'https://www.xeno-canto.org/sounds/uploaded/ZNCDXTUOFL/XC477326-dudek%20%282%29.mp3',
+        'Океан Ельзи — украинская рок-группа. Создана 12 октября 1994 года во Львове. Лидером и вокалистом группы является Святослав Вакарчук.',
+      image: `${LINK_FOR_IMG}03_05.jpg`,
+      audio: `${LINK_FOR_AUDIO}Океан%20Эльзы%20-%20Я%20не%20сдамся%20без%20бою.mp3`,
     },
     {
       id: 6,
-      name: 'Стриж',
-      species: 'Apus apus',
+      name: 'Сплин',
+      species: 'Выхода нет',
       description:
-        'Стрижа можно увидеть практически в каждом уголке планеты. Они обитают как в лесных зонах, так и на открытых местностях. Живут стрижи крупными стаями. Большие колонии этих птиц можно увидеть в городах или на прибрежных скалах.',
-      image: 'https://live.staticflickr.com//65535//48386150031_7b749df74b.jpg',
-      audio: 'https://www.xeno-canto.org/sounds/uploaded/TMUAWSDHDJ/XC511871-G.mp3',
+        'Сплин— российская рок-группа из Санкт-Петербурга. Бессменный лидер — Александр Васильев. Датой рождения группы считается 27 мая 1994 года. Название группы возникло благодаря строкам стихотворения русского поэта Серебряного века Саши Чёрного.',
+      image: `${LINK_FOR_IMG}03_06.jpg`,
+      audio: `${LINK_FOR_AUDIO}Сплин%20-%20Выхода%20нет.mp3`,
     },
   ],
   [
     {
       id: 1,
-      name: 'Жаворонок',
-      species: 'Alauda arvensis',
+      name: 'Nickelback',
+      species: 'Photograph',
       description:
-        'Жаворонки — перелетные птицы. С начала сентября они отлетают на юг. Возвращаются они в начале марта, независимо от того, сошел снег или нет. По прилету жаворонков определяли наступление весны и пору, когда пора пахать землю.',
-      image: 'https://live.staticflickr.com/65535/47105096764_f751fba568.jpg',
-      audio:
-        'https://www.xeno-canto.org/sounds/uploaded/ZNCDXTUOFL/XC462158-Skowronek_Alauda_arvensis_Poland_Jarek_Matusiak_%20-006%20skowronek%20%282%29.mp3',
+        'Nickelback — канадская альтернативная рок-группа, основанная в 1995 году в городе Ханна (англ.). Название группы образовано от англ. Here’s your nickel back. — «Вот ваша сдача». Группа попала в список лучших артистов первого десятилетия XXI века, по мнению Billboard, где заняла первое место среди рок-групп.',
+      image: `${LINK_FOR_IMG}04_01.jpg`,
+      audio: `${LINK_FOR_AUDIO}Nickelback%20-%20Photograph.mp3`,
     },
     {
       id: 2,
-      name: 'Соловей',
-      species: 'Luscinia luscinia',
+      name: 'Nirvana',
+      species: 'Sappy',
       description:
-        'Соловьи поют с начала мая и до конца лета. Каждая песня соловья состоит из 12 повторяющихся элементов, которые еще называют коленами. Кроме собственных трелей, соловьи легко и хорошо перенимают пение других птиц.',
-      image: 'https://live.staticflickr.com/7605/27669397735_f3c21758f2.jpg',
-      audio:
-        'https://www.xeno-canto.org/sounds/uploaded/HILVWSADVL/XC513809-R07_0052%20Thrush%20Nightingale%20Snipe.mp3',
+        'Nirvana — американская рок-группа, созданная вокалистом и гитаристом Куртом Кобейном и басистом Кристом Новоселичем в Абердине, штат Вашингтон, в 1987 году. Недолгая, но яркая история группы прервалась в связи со смертью Курта Кобейна 5 апреля 1994 года, но в последующие годы известность команды лишь росла.',
+      image: `${LINK_FOR_IMG}04_02.jpg`,
+      audio: `${LINK_FOR_AUDIO}Nirvana%20-%20Sappy.mp3`,
     },
     {
       id: 3,
-      name: 'Скворец',
-      species: 'Sturnus vulgaris',
+      name: 'Papa Roach',
+      species: '',
       description:
-        'Скворцы - перелётные птицы. Синхронный перелет больших стай скворцов называется мурмурацией. Это красивое и завораживающее явление – множество птиц будто танцуют в воздухе, образуя замысловатые фигуры, которые уменьшаются и увеличиваются в небе.',
-      image: 'https://live.staticflickr.com/65535/49357593971_9509fe1d7c.jpg',
-      audio:
-        'https://www.xeno-canto.org/sounds/uploaded/GYAUIPUVNM/XC515519-2020.01.01_17.24_01.MP3',
+        'Papa Roach — американская рок-группа из города Вакавилль, штат Калифорния, образованная в 1993 году. Обрела мировую известность благодаря своему второму альбому Infest (2000). Альбомы группы разошлись общим тиражом более 20 миллионов экземпляров.',
+      image: `${LINK_FOR_IMG}04_03.jpg`,
+      audio: `${LINK_FOR_AUDIO}Papa_Roach-Scars.mp3`,
     },
     {
       id: 4,
-      name: 'Иволга',
-      species: 'Oriolus oriolus',
+      name: 'Queen',
+      species: 'The Show Must Go On',
       description:
-        'Мелодичность голоса иволги сравнивают со звучанием флейты. Человеку сложно разглядеть иволгу, так как она обитает высоко на деревьях. Иволга не только очень красивая, но и  полезная птица. Она уничтожает ядовитых гусениц, которых не поедают другие птицы.',
-      image: 'https://live.staticflickr.com/65535/47102184004_58a93380b9.jpg',
-      audio:
-        'https://www.xeno-canto.org/sounds/uploaded/GYAUIPUVNM/XC491801-2019.07.07_06.28_01.mp3',
+        'Queen — британская рок-группа, добившаяся широчайшей известности в середине 1970-х годов, и одна из наиболее успешных групп в истории рок-музыки. Средства массовой информации называют группу «культовой» и пишут, что она и по сей день имеет сотни миллионов поклонников. ',
+      image: `${LINK_FOR_IMG}04_04.jpg`,
+      audio: `${LINK_FOR_AUDIO}Queen%20-%20The%20Show%20Must%20Go%20On.mp3`,
     },
     {
       id: 5,
-      name: 'Свиристель',
-      species: 'Bombycilla garrulus',
+      name: 'Rise Against',
+      species: 'Give It All',
       description:
-        'У свиристели очень цепкие коготки, что помогает птице удерживаться на ветках и склевывать ягоды, которые труднее всего достать. В период ухаживаний самец предлагает самке ягоду или другое угощение. Если самка его принимает, то птицы создают пару.',
-      image: 'https://live.staticflickr.com//65535//49367433842_1b06da0e6b.jpg',
-      audio:
-        'https://www.xeno-canto.org/sounds/uploaded/ZNCDXTUOFL/XC517421-AB-004%20%282%29%20jemio%C5%82uszka.mp3',
+        'Rise Against — американская панк-рок-группа, основанная в декабре 1999 года в Чикаго, штат Иллинойс. Различные песни группы Rise Against были тем или иным образом использованы в различных телешоу, спортивных передачах, видео и компьютерных играх.',
+      image: `${LINK_FOR_IMG}04_05.jpg`,
+      audio: `${LINK_FOR_AUDIO}Rise%20Against%20-%20Give%20it%20All.mp3`,
     },
     {
       id: 6,
-      name: 'Щегол',
-      species: 'Carduelis carduelis',
+      name: 'Scorpions',
+      species: 'The Game of Life',
       description:
-        'Щеглы поют красиво и мелодично. И в природе, и в неволе они щебечут почти круглый год. В пении щегла различают более 20 переливчатых трелей. Щеглы привыкают к людям, и даже могут возвратиться к хозяину после того, как их выпустили на волю',
-      image: 'https://live.staticflickr.com//65535//49366257253_db3ce48b9a.jpg',
-      audio:
-        'https://www.xeno-canto.org/sounds/uploaded/VOLIQOYWKG/XC489265-190724_07.58h_putter_biesbosch_%20boompjes%20langs%20open%20water_zang_1ex_ad_niet%20gezien_.mp3',
+        'Scorpions — немецкая англоязычная рок-группа, созданная в 1965 в Ганновере. Для стиля группы характерны как классический хард-рок, так и лирические гитарные баллады.Scorpions являются самой популярной рок-группой Германии и одной из самых известных в мире, продав более 100 миллионов копий своих альбомов.',
+      image: `${LINK_FOR_IMG}04_06.jpg`,
+      audio: `${LINK_FOR_AUDIO}Scorpions%20-%20The%20Game%20Of%20Life.mp3`,
     },
   ],
   [
     {
       id: 1,
-      name: 'Орёл',
-      species: 'Aquila nipalensis',
+      name: 'Simple Plan',
+      species: 'Take My Hand',
       description:
-        'В древние времена орел был символом солнца. Орлы часто парят над землей, при этом скорость их перемещения может достигать 240 км/ч. Иллюзия медленного движения происходит из-за высоты полета – более 700 метров',
-      image: 'https://live.staticflickr.com//4835//43867392960_7105d71e19.jpg',
-      audio:
-        'https://www.xeno-canto.org/sounds/uploaded/KTBTZAHSXF/10_Aquila_nipalensis_al02D85.mp3',
+        'Simple Plan — канадская рок-группа, образовавшаяся в Монреале в конце 1999 года. Релизы Simple Plan занимали места в хит-парадах по всему миру. Всего коллектив продал около четырёх миллионов копий своих альбомов в США и Канаде и свыше 7,5 миллионов по всему миру.',
+      image: `${LINK_FOR_IMG}05_01.jpg`,
+      audio: `${LINK_FOR_AUDIO}Simple%20Plan%20-%20Take%20My%20Hand.mp3`,
     },
     {
       id: 2,
-      name: 'Коршун',
-      species: 'Milvus migrans',
+      name: 'Skillet',
+      species: 'Awake and Alive',
       description:
-        'Коршуны – крупные хищники, в высоту они достигают около полуметра, а вес взрослых особей достигает 1 кг. Крылья узкие и длинные, их размах составляет 1,5 м. Коршуны часто гнездятся большими стаями и даже образуют крупные колонии.',
-      image: 'https://live.staticflickr.com//65535//48701190276_ee2a9ed594.jpg',
-      audio:
-        'https://www.xeno-canto.org/sounds/uploaded/SDPCHKOHRH/XC485740-2019-06-22%20Selenga%20Milan%20brun%20cris%20de%20quemandage%203.mp3',
+        'Skillet — американская христианская рок-группа из города Мемфис, штат Теннесси, основанная в 1996 году. На данный момент группой выпущено десять студийных альбомов, четыре EP и два концертных альбома.',
+      image: `${LINK_FOR_IMG}05_02.jpg`,
+      audio: `${LINK_FOR_AUDIO}Skillet-Awake_And_Alive.mp3`,
     },
     {
       id: 3,
-      name: 'Лунь',
-      species: 'Circus cyaneus',
+      name: 'Slipknot',
+      species: 'Dead Memories',
       description:
-        'Лунь – это небольшой сокол. Питается в основном мышевидными грызунами, основа его рациона – полёвки, хомяки, мыши. Оперение луня может быть пепельно-серым. С такой птицей связано сравнение «седой, как лунь».',
-      image: 'https://live.staticflickr.com/65535/49322743903_32f3922d9e.jpg',
-      audio:
-        'https://www.xeno-canto.org/sounds/uploaded/BLMSIUFTFU/XC513498-190709_1175_Cir.cyan-f.mp3',
+        'Slipknot — американская ню-метал-группа, образованная в сентябре 1995 года в Айове, США. Альбомы группы получили статус платиновых, всего продано более 30 млн копий по всему миру из которых 6 миллионов в США.',
+      image: `${LINK_FOR_IMG}05_03.jpg`,
+      audio: `${LINK_FOR_AUDIO}Slipknot%20-%20Dead%20Memories.mp3`,
     },
     {
       id: 4,
-      name: 'Сокол',
-      species: 'Falco peregrinus',
+      name: 'System of a Down',
+      species: 'Metro',
       description:
-        'Латинское название сокола Falco произошло от слова «серп» из-за серповидной формы крыльев. Длинные и широкие крылья позволяют соколу высоко подниматься в небо и свободно парить. Скорость полёта сокола достигает 280-320 километров в час.',
-      image: 'https://live.staticflickr.com//65535//49310710607_92a3a145a9.jpg',
-      audio: 'https://www.xeno-canto.org/sounds/uploaded/MMEJYLOPDO/XC496049-Pilgrimsfalk_06.mp3',
+        'System of a Down — армяно-американская рок-группа, образованная в 1992 году в Лос-Анджелесе Сержем Танкяном и Дароном Малакяном под названием Soil, а в 1995 принявшая нынешнее название. В период с 1998 по 2005 год группа выпустила пять студийных альбомов, каждый из которых стал платиновым.',
+      image: `${LINK_FOR_IMG}05_04.jpg`,
+      audio: `${LINK_FOR_AUDIO}System%20of%20a%20Down%20-%20Metro.mp3`,
     },
     {
       id: 5,
-      name: 'Ястреб',
-      species: 'Accipiter gentilis',
+      name: 'The Fray',
+      species: 'Say When',
       description:
-        'Для всех ястребов характерны широкие и короткие крылья. Ещё один отличительный признак - белые «брови» над глазами. Славянские дружинники размещали изображение ястреба на своих знаменах, как символ отваги, мощи и безжалостности к врагам.',
-      image: 'https://live.staticflickr.com//65535//49024617331_b9d0d2c9b3.jpg',
-      audio: 'https://www.xeno-canto.org/sounds/uploaded/MMEJYLOPDO/XC512740-Duvh%C3%B6k_09.mp3',
+        'The Fray — американская христианская рок-группа, основанная в 2002-м году в Денвере (штат Колорадо, США). Группа получила широкую известность в 2005-м году после выпуска дебютного альбома «How To Save A Life», который был дважды признан платиновым ассоциаций RIAA.',
+      image: `${LINK_FOR_IMG}05_05.jpg`,
+      audio: `${LINK_FOR_AUDIO}The%20Fray%20-%20Say%20When.mp3`,
     },
     {
       id: 6,
-      name: 'Филин',
-      species: 'Bubo bubo',
+      name: 'The Letter Black',
+      species: 'Break Out',
       description:
-        'Полет филина бесшумный, зрение очень острое. Эти особенности делают птицу непревзойденным ночным охотником. У филина нет естественных врагов, ни один зверь не охотится на взрослых птиц. А вот на птенцов нападают лисы и волки.',
-      image: 'https://live.staticflickr.com/65535/48137123012_393653c2e4.jpg',
-      audio:
-        'https://www.xeno-canto.org/sounds/uploaded/WNLIDKJKXT/XC518386-sense%20t%C3%ADtol.mp3',
+        'The Letter Black, ранее известная как Breaking the Silence — музыкальная группа из США, играющая христианский рок. Группа даёт более 150 концертов в год.',
+      image: `${LINK_FOR_IMG}05_06.jpg`,
+      audio: `${LINK_FOR_AUDIO}The%20Letter%20Black%20-%20Break%20Out.mp3`,
     },
   ],
   [
     {
       id: 1,
-      name: 'Альбатрос',
-      species: 'Diomedea exulans',
+      name: 'The Offspring',
+      species: 'You are Gonna Go Far, Kid',
       description:
-        'Альбатрос - самая крупная летающая птица в мире. Размах крыльев достигает три с половиной, вес - десять килограммов. Большую часть жизни альбатросы проводят в воздухе, покрывая над океанскими просторами огромные расстояния',
-      image: 'https://live.staticflickr.com/7557/16260253965_8e9430cb66.jpg',
-      audio:
-        'https://www.xeno-canto.org/sounds/uploaded/WOEAFQRMUD/XC293087-Diomedea%20exulans151120_T254.mp3',
+        'The Offspring — американская калифорнийская панк-рок-группа, основанная в 1984 году. Копии альбомов The Offspring проданы количеством в 40 миллионов по всему миру, и считается одной из самых продаваемых панк-рок групп за всё время.',
+      image: `${LINK_FOR_IMG}06_01.jpg`,
+      audio: `${LINK_FOR_AUDIO}The%20Offspring%20-%20You're%20Gonna%20Go%20Far%2C%20Kid.mp3`,
     },
     {
       id: 2,
-      name: 'Олуша',
-      species: 'Sula nebouxii',
+      name: 'The Pretty Reckless',
+      species: 'Goin Down',
       description:
-        'Особенностью голубоногой олуши является не только насыщенный ярко-синий цвет лапок, но еще и тот факт, что они очень теплые. В то время как другие виды птиц греют кладки своим телом, голубоногая олуша делает это с помощью лапок',
-      image: 'https://live.staticflickr.com/800/40645471394_4422e69ed8.jpg',
-      audio:
-        'https://www.xeno-canto.org/sounds/uploaded/YHKQPPJDVP/XC411507-171217_1491%20BF%20Booby%205ft%20IDLP%201230%20mp3%20amp.mp3',
+        'The Pretty Reckless — рок-группа из Нью-Йорка, возглавляемая Тейлор Момсен. Дебютный альбом группы, Light Me Up, был издан 30 августа 2010 года. Первый сингл «Make Me Wanna Die» вышел 13 мая 2010 года и занял первое место в UK Rock Chart.',
+      image: `${LINK_FOR_IMG}06_02.jpg`,
+      audio: `${LINK_FOR_AUDIO}The%20Pretty%20Reckless%20-%20Goin%20Down.mp3`,
     },
     {
       id: 3,
-      name: 'Буревестник',
-      species: 'Puffinus griseus',
+      name: 'The Rasmus',
+      species: 'Night after night',
       description:
-        'Размеры буревестниковых разные. Самые маленькие из них в длину составляют до 25 см, самые большие - до 1 м, при размахе крыльев около 2 м. Существует поверье, что появление буревестника в воздухе предвещает бурю, о чем говорит само название птицы.',
-      image: 'https://live.staticflickr.com//607//22136056020_935cb113f9.jpg',
-      audio:
-        'https://www.xeno-canto.org/sounds/uploaded/XQEVNREHJY/SHEARWATER%20Christmas%20Island_04_Motu_Isla%20de%20Pascua-Easter%20Island_CH_4MAR03_Alvaro%20Jaramillo.mp3',
+        'The Rasmus — финская рок-группа, сформированная в 1994 году в Хельсинки, когда члены группы ещё учились в школе. The Rasmus — одна из самых успешных финских групп: по всему миру продано более 4 миллиона копий альбомов, они получили 8 «золотых» и 5 «платиновых» наград.',
+      image: `${LINK_FOR_IMG}06_03.jpg`,
+      audio: `${LINK_FOR_AUDIO}The%20Rasmus%20-%20Night%20After%20Night%20(Out%20Of%20The%20Shadows).mp3`,
     },
     {
       id: 4,
-      name: 'Пеликан',
-      species: 'Pelecanus',
+      name: 'Three Days Grace',
+      species: 'Over and Over',
       description:
-        'Пеликаны — обитатели морей и рек. Ходят они неуклюже, но хорошо летают и плавают. Питаются в основном рыбой, устраивают коллективные охоты — выстроившись полукругом хлопают по воде крыльями и клювами и вытесняют напуганную рыбу на мелководье.',
-      image: 'https://live.staticflickr.com/7885/46523771945_9496c2a191.jpg',
-      audio: 'https://www.xeno-canto.org/sounds/uploaded/XAMHIHFTZG/XC331138-call1.mp3',
+        'Three Days Grace — канадская рок-группа, исполняющая альтернативный метал и постгранж. Была сформирована под названием Groundswell в Норвуде, Онтарио, Канада в 1992 году.',
+      image: `${LINK_FOR_IMG}06_04.jpg`,
+      audio: `${LINK_FOR_AUDIO}Three%20Days%20Grace%20-%20Over%20And%20Over%20♥.mp3`,
     },
     {
       id: 5,
-      name: 'Пингвин',
-      species: 'Aptenodytes forsteri',
+      name: 'Zebrahead',
+      species: 'Just the Tip',
       description:
-        'Самец императорского пингвина достигает роста 130 см, его масса может приближаться к 50 кг. Из всех современных пингвинов этот вид – самый крупный. Питание пингвина состоит из рыбы, кальмаров и криля. Охотятся птицы в океане большими группами.',
-      image: 'https://live.staticflickr.com/5202/5252413926_8e013a3efd.jpg',
-      audio:
-        'https://www.xeno-canto.org/sounds/uploaded/OOECIWCSWV/XC449827-LS100829%20King%20Penguin%20call%20A.mp3',
+        'Zebrahead — американская рок-группа из округа Ориндж, Калифорния, совмещающая в своём творчестве такие стили как поп-панк, панк-рок и рэп-рок. Группа была сформирована в 1996 году.',
+      image: `${LINK_FOR_IMG}06_05.jpg`,
+      audio: `${LINK_FOR_AUDIO}Zebrahead-Just_The_Tip(vmusice.net).mp3`,
     },
     {
       id: 6,
-      name: 'Чайка',
-      species: 'Larus argentatus',
+      name: 'Sum 41',
+      species: 'Reason to Believe',
       description:
-        'Чайки населяют берега морей, озёр, рек, водохранилищ, болот, часто гнездятся на островах. С конца прошлого века чайки стали появляться в крупных городах, где устраивает гнёзда на крышах зданий. Все чайки ведут колониальный образ жизни.',
-      image: 'https://live.staticflickr.com/65535/48577115317_7034201dde.jpg',
-      audio:
-        'https://www.xeno-canto.org/sounds/uploaded/VOLIQOYWKG/XC501190-190801_06.50h_zilvermeeuw_duinen%20van%20goeree_roep_2ex_overvliegend_gezien_.mp3',
+        'Sum 41 — канадская панк-рок-группа из города Эйджакс, Онтарио[14]. Была образована в 1996 году. Sum 41 известны своими продолжительными турне, которые нередко длятся более года и включают более 300 концертов.',
+      image: `${LINK_FOR_IMG}06_06.jpg`,
+      audio: `${LINK_FOR_AUDIO}sum_41_-_reason_to_believe(zaycev.net).mp3`,
     },
   ],
 ];

@@ -6,7 +6,7 @@ import TopPlayerStyled from './Styled/TopPlayerStyled';
 const TopPlayer = ({ audioSrc }) => {
   return (
     <TopPlayerStyled>
-      <ReactAudioPlayer src={audioSrc} controls preload={true} />
+      <ReactAudioPlayer src={audioSrc} controls />
     </TopPlayerStyled>
   );
 };

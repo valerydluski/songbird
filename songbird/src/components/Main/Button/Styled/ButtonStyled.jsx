@@ -15,6 +15,7 @@ const ButtonStyled = styled.button`
   border: none;
   cursor: pointer;
   place-self: center;
+  text-shadow: none;
 `;
 
 export default ButtonStyled;

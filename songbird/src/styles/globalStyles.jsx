@@ -1,8 +1,8 @@
 import { createGlobalStyle } from 'styled-components';
+import { LINK_FOR_IMG } from '../config';
 
 const GlobalStyle = createGlobalStyle`
   body, html, #root, .App{
-    height: 100%;
     min-height: 100vh;
     min-width: 100%;
     margin: 0 auto;
@@ -11,7 +11,12 @@ const GlobalStyle = createGlobalStyle`
   html {
     font-size: 10px;
     font-family: 'Montserrat', sans-serif;
-    background: #E5E5E5;
+    background-image: url(${LINK_FOR_IMG}bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-shadow: white 1px 1px 0, white -1px -1px 0,
+    white -1px 1px 0, white 1px -1px 0;
   }
 
   .react-audio-player  {
@@ -20,11 +25,16 @@ const GlobalStyle = createGlobalStyle`
     border-radius: 10px;
     outline: none;
     width: 80%;
-    color: #6550de;
   }
 
   .toast-container {
     font-size: 22px;
+    text-shadow: none;
+  }
+
+  body {
+    background-color: rgba(161,21,207, 0.3);
+
   }
 `;
 

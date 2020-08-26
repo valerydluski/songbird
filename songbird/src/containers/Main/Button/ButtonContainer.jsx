@@ -1,13 +1,14 @@
 import React, { useContext } from 'react';
+import PropTypes from 'prop-types';
 import { toast } from 'react-toastify';
 import Button from '../../../components/Main/Button/Button';
 import { ContextApp } from '../../../store/reducer';
 import shuffleArray from '../../../utils/shuffleArray';
 import birdsData from '../../../data/data';
 
-const ButtonContainer = () => {
+const ButtonContainer = ({ toggleMode }) => {
   const { state, dispatch } = useContext(ContextApp);
-  const handler = () => {
+  const nextLevel = () => {
     if (state.isCorrect) {
       dispatch({
         type: 'change_level',
@@ -43,7 +44,23 @@ const ButtonContainer = () => {
       toast.info('Вы не дали верный ответ');
     }
   };
-  return <Button handler={handler} />;
+  const lastLevel = () => {
+    if (state.isCorrect) {
+      toggleMode(true);
+    } else {
+      toast.info('Вы не дали верный ответ');
+    }
+  };
+  const handler = () => {
+    state.level === 5 ? lastLevel() : nextLevel();
+  };
+  return (
+    <Button handler={handler} text={state.level === 5 ? 'Закончить игру' : 'Следующий уровень'} />
+  );
+};
+
+ButtonContainer.propTypes = {
+  toggleMode: PropTypes.func.isRequired,
 };
 
 export default ButtonContainer;

@@ -6,8 +6,10 @@ import { ContextApp } from '../../../store/reducer';
 const AnswerOption = ({ name, answer }) => {
   const { state, dispatch } = useContext(ContextApp);
   const [isAnswered, setIsAnswered] = useState(false);
+  const [className, setClassName] = useState('');
   return (
     <AnswerOptionStyled
+      className={className}
       onClick={() => {
         if (!state.isCorrect && !isAnswered) {
           dispatch({
@@ -35,7 +37,9 @@ const AnswerOption = ({ name, answer }) => {
                 score: state.score + state.countAnswer * 10,
               },
             });
+            setClassName('correct');
           } else {
+            setClassName('not-correct');
             dispatch({
               type: 'change_count_answer',
               payload: {
@@ -44,6 +48,13 @@ const AnswerOption = ({ name, answer }) => {
             });
             setIsAnswered(true);
           }
+        } else {
+          dispatch({
+            type: 'change_answer',
+            payload: {
+              answer: answer,
+            },
+          });
         }
       }}
     >

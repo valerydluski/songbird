@@ -8,8 +8,7 @@ import { ContextApp } from '../../../store/reducer';
 import { DEFAULT_IMAGE } from '../../../config';
 
 const TopContentContainer = ({ correctAnimal }) => {
-  const { state, dispatch } = useContext(ContextApp);
-  console.log("TopContentContainer -> state", state)
+  const { state } = useContext(ContextApp);
   const isCorrectAnswer = () => {
     if (state.answer.name === correctAnimal.name) return state.answer.name;
     return '******';

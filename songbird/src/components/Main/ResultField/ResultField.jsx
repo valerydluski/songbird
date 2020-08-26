@@ -9,7 +9,7 @@ import TopPlayer from '../TopContent/TopPlayer';
 import Description from './Description';
 
 const ResultField = () => {
-  const { state, dispatch } = useContext(ContextApp);
+  const { state } = useContext(ContextApp);
 
   return (
     <ResultFieldStyled>

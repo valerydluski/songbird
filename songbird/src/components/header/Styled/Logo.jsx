@@ -7,7 +7,7 @@ const LogoContainerStyled = styled.div`
   height: 60px;
   background-size: contain;
   background-repeat: no-repeat;
-  margin: 10px;
+  margin: 20px;
 `;
 
 export default LogoContainerStyled;

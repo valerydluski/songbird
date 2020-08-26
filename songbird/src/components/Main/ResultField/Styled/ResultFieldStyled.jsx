@@ -16,6 +16,7 @@ const ResultFieldStyled = styled.div`
     'image latName'
     'image player'
     'description description';
+
 `;
 
 export default ResultFieldStyled;
