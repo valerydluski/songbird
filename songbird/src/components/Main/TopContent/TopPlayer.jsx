@@ -1,12 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import ReactAudioPlayer from 'react-audio-player';
+import AudioPlayer from 'react-h5-audio-player';
+import 'react-h5-audio-player/lib/styles.css';
 import TopPlayerStyled from './Styled/TopPlayerStyled';
 
 const TopPlayer = ({ audioSrc }) => {
   return (
     <TopPlayerStyled>
-      <ReactAudioPlayer src={audioSrc} controls />
+      <AudioPlayer
+        src={audioSrc}
+        showJumpControls={false}
+        autoPlayAfterSrcChange={false}
+        style={{ backgroundColor: '#6550de' }}
+      />
     </TopPlayerStyled>
   );
 };

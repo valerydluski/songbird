@@ -34,7 +34,14 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     background-color: rgba(161,21,207, 0.3);
+  }
 
+  .rhap_main-controls-button,
+  .rhap_repeat-button,
+  .rhap_volume-button,
+  .rhap_time{
+    color: white;
+    text-shadow: none;
   }
 `;
 
