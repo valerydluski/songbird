@@ -55,7 +55,11 @@ const ButtonContainer = ({ toggleMode }) => {
     state.level === 5 ? lastLevel() : nextLevel();
   };
   return (
-    <Button handler={handler} text={state.level === 5 ? 'Закончить игру' : 'Следующий уровень'} />
+    <Button
+      handler={handler}
+      text={state.level === 5 ? 'Закончить игру' : 'Следующий уровень'}
+      className={state.isCorrect === true ? 'active' : 'not-active'}
+    />
   );
 };
 

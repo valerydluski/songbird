@@ -16,6 +16,11 @@ const ButtonStyled = styled.button`
   cursor: pointer;
   place-self: center;
   text-shadow: none;
+
+  &.not-active {
+    color: #6550de;
+    background-color: #ffffff;
+  }
 `;
 
 export default ButtonStyled;
