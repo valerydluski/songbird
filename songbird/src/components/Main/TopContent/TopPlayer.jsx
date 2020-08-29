@@ -33,6 +33,14 @@ const TopPlayer = ({ audioSrc }) => {
       showJumpControls={false}
       autoPlayAfterSrcChange={false}
       style={{ backgroundColor: 'rgba(101, 80, 222, 0.7)' }}
+      onPlay={() => {
+        dispatch({
+          type: 'isPauseBottom',
+          payload: {
+            isPauseBottom: true,
+          },
+        });
+      }}
     />
   );
   return <TopPlayerStyled>{myPlayer}</TopPlayerStyled>;

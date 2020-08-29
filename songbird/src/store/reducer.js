@@ -12,6 +12,7 @@ export const initialState = {
   countAnswer: 5,
   score: 0,
   isPause: false,
+  isPauseBottom: false,
 };
 
 export const changeAnswer = (state, action) => {
@@ -22,6 +23,11 @@ export const changeAnswer = (state, action) => {
         ...action.payload,
       };
     case 'isPause':
+      return {
+        ...state,
+        ...action.payload,
+      };
+    case 'isPauseBottom':
       return {
         ...state,
         ...action.payload,
