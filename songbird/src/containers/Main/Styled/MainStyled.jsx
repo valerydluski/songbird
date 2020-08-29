@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { DEVICE } from '../../../config';
 
 const MainStyled = styled.main`
   display: grid;
@@ -10,6 +11,17 @@ const MainStyled = styled.main`
     'button button';
   width: 100%;
   height: 700px;
+
+  @media ${DEVICE.laptop} {
+    height: 1100px;
+    grid-template-columns: 100%;
+    grid-template-rows: 30% 25% 35% 10%;
+    grid-template-areas:
+      'imageAndPlayer'
+      'gameField'
+      'resultField'
+      'button';
+  }
 `;
 
 export default MainStyled;

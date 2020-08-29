@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { DEVICE } from '../../../../config';
 
 const TopContentContainerStyled = styled.div`
   font-size: 24px;
@@ -12,6 +13,15 @@ const TopContentContainerStyled = styled.div`
   grid-template-areas:
     'image answer'
     'image player';
+
+  @media ${DEVICE.tablet} {
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 50% 30%;
+    grid-template-areas:
+      'answer'
+      'image'
+      'player';
+  }
 `;
 
 export default TopContentContainerStyled;

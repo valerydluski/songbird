@@ -46,7 +46,7 @@ const RestartButtonContainer = ({ toggleMode }) => {
       },
     });
   };
-  return <Button handler={handler} text="Начать заново" />;
+  return <Button handler={handler} className="modalPageButton" text="Начать заново" />;
 };
 
 RestartButtonContainer.propTypes = {

@@ -21,6 +21,16 @@ const ButtonStyled = styled.button`
     color: #6550de;
     background-color: #ffffff;
   }
+
+  &.modalPageButton {
+    margin-top: 20px;
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+      width: 140px;
+      height: 37px;
+    }
+  }
 `;
 
 export default ButtonStyled;

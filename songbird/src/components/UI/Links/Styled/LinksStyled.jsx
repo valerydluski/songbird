@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { DEVICE } from '../../../../config';
 
 const LiStyled = styled.li`
   display: flex;
@@ -13,6 +14,10 @@ export const AStyled = styled.a`
   text-decoration: none;
   width: 100%;
   cursor: default;
+
+  @media ${DEVICE.laptopM} {
+    font-size: 18px;
+  }
 
   &.active {
     background-color: #6550de;

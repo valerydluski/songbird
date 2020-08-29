@@ -6,8 +6,8 @@ const ModalStyled = styled.div`
   align-items: center;
   justify-content: center;
   width: 65%;
-  min-width: fit-content;
   height: 90vh;
+  max-height: 500px;
   min-height: fit-content;
   padding: 10px;
   flex-direction: column;
@@ -17,22 +17,6 @@ const ModalStyled = styled.div`
   transition: all 0.5s;
   box-shadow: 7.2203px 7.2203px 9.92791px rgba(0, 0, 0, 0.05);
   border-radius: 20.7584px;
-
-  @media (max-width: 768px) {
-    width: 70%;
-    .modalPageButton {
-      font-size: 14px;
-      width: 140px;
-      height: 37px;
-      }
-  }
-
-  @media (max-width: 500px) {
-    .modalPageButton {
-    font-size: 10px;
-    width: 74px;
-    height: 37px;
-    }
 `;
 
 export default ModalStyled;

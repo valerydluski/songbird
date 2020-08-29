@@ -11,7 +11,7 @@ const TopPlayer = ({ audioSrc }) => {
         src={audioSrc}
         showJumpControls={false}
         autoPlayAfterSrcChange={false}
-        style={{ backgroundColor: '#6550de' }}
+        style={{ backgroundColor: 'rgba(101, 80, 222, 0.7)' }}
       />
     </TopPlayerStyled>
   );

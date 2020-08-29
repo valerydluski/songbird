@@ -15,7 +15,7 @@ const ResultField = () => {
     <ResultFieldStyled>
       {state.isAnswer ? (
         <>
-          <TopImage imageSrc={state.answer.image} />
+          <TopImage imageSrc={state.answer.image} className={'answer'} />
           <Name name={state.answer.name} />
           <LatName species={state.answer.species} />
           <TopPlayer audioSrc={state.answer.audio} />

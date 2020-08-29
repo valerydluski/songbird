@@ -2,11 +2,22 @@ import React, { useState, useContext } from 'react';
 import PropTypes from 'prop-types';
 import AnswerOptionStyled from './Styled/AnswerOptionStyled';
 import { ContextApp } from '../../../store/reducer';
+import errorSound from '../../../assets/audio/error.mp3';
+import correctSound from '../../../assets/audio/correct.mp3';
 
 const AnswerOption = ({ name, answer }) => {
   const { state, dispatch } = useContext(ContextApp);
   const [isAnswered, setIsAnswered] = useState(false);
   const [className, setClassName] = useState('');
+
+  const audioAnswer = new Audio();
+
+  const playAudio = (src) => {
+    audioAnswer.setAttribute('src', `${src}`);
+    audioAnswer.load();
+    audioAnswer.play();
+  };
+
   return (
     <AnswerOptionStyled
       className={className}
@@ -38,8 +49,10 @@ const AnswerOption = ({ name, answer }) => {
               },
             });
             setClassName('correct');
+            playAudio(correctSound);
           } else {
             setClassName('not-correct');
+            playAudio(errorSound);
             dispatch({
               type: 'change_count_answer',
               payload: {
