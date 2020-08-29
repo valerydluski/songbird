@@ -11,11 +11,17 @@ export const initialState = {
   correctAnswer: shuffleArray(birdsData[0])[0],
   countAnswer: 5,
   score: 0,
+  isPause: false,
 };
 
 export const changeAnswer = (state, action) => {
   switch (action.type) {
     case 'change_answer':
+      return {
+        ...state,
+        ...action.payload,
+      };
+    case 'isPause':
       return {
         ...state,
         ...action.payload,

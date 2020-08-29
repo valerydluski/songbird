@@ -5,7 +5,7 @@ import DefaultText from './DefaultText';
 import TopImage from '../TopContent/TopImage';
 import Name from './Name';
 import LatName from './LatName';
-import TopPlayer from '../TopContent/TopPlayer';
+import TopPlayer from '../TopContent/BottomPlayer';
 import Description from './Description';
 
 const ResultField = () => {

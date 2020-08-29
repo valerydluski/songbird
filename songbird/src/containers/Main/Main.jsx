@@ -11,7 +11,6 @@ import ModalResult from '../modal/ResultModal';
 
 const Main = ({ birdsArray }) => {
   const { state } = useContext(ContextApp);
-  console.log('Main -> state', state.correctAnswer.name);
   const [isGameFinished, toggleGameMode] = useState(false);
 
   return (

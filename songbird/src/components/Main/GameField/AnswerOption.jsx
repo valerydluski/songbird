@@ -43,6 +43,12 @@ const AnswerOption = ({ name, answer }) => {
               },
             });
             dispatch({
+              type: 'isPause',
+              payload: {
+                isPause: true,
+              },
+            });
+            dispatch({
               type: 'change_score',
               payload: {
                 score: state.score + state.countAnswer * 10,
