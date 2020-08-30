@@ -13,9 +13,9 @@ const MainStyled = styled.main`
   height: 700px;
 
   @media ${DEVICE.laptop} {
-    height: 1100px;
+    height: 1300px;
     grid-template-columns: 100%;
-    grid-template-rows: 30% 25% 35% 10%;
+    grid-template-rows: 30% 20% 40% 10%;
     grid-template-areas:
       'imageAndPlayer'
       'gameField'

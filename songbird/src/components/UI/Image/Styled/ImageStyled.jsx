@@ -9,7 +9,7 @@ const ImageStyled = styled.img`
 
   &.answer {
     @media ${DEVICE.laptopS} {
-      width: 90%;
+      width: 80%;
       height: 155px;
     }
   }

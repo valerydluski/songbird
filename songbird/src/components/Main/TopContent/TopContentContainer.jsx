@@ -9,12 +9,13 @@ import { DEFAULT_IMAGE } from '../../../config';
 
 const TopContentContainer = ({ correctAnimal }) => {
   const { state } = useContext(ContextApp);
+  console.log('TopContentContainer -> state', state);
   const isCorrectAnswer = () => {
-    if (state.answer.name === correctAnimal.name) return state.answer.name;
+    if (state.isCorrect) return state.correctAnswer.name;
     return '******';
   };
   const isCorrectAnswerImage = () => {
-    if (state.answer.name === correctAnimal.name) return state.answer.image;
+    if (state.isCorrect) return state.correctAnswer.image;
     return DEFAULT_IMAGE;
   };
 

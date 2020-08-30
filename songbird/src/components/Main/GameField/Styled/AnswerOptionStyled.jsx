@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const AnswerOptionStyled = styled.li`
   display: flex;
   text-align: center;
-  margin-left: 20px;
+  margin: 0 20px;
   border-bottom: 2px solid #6550de;
   cursor: pointer;
 

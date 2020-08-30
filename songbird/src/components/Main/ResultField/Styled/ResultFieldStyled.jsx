@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { DEVICE } from '../../../../config';
 
 const ResultFieldStyled = styled.div`
   color: #6550de;
@@ -17,6 +18,15 @@ const ResultFieldStyled = styled.div`
     'image player'
     'description description';
 
+  @media ${DEVICE.laptop} {
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 20% 20% 30% 30%;
+    grid-template-areas:
+      'image name'
+      'image latName'
+      'player player'
+      'description description';
+  }
 `;
 
 export default ResultFieldStyled;
