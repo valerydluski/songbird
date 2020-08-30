@@ -33,7 +33,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background-color: rgba(161,21,207, 0.3);
+    background-color: rgba(255,255,255, 0.2);
   }
 
   .rhap_main-controls-button,
