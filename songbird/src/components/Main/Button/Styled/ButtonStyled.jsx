@@ -20,6 +20,7 @@ const ButtonStyled = styled.button`
   &.not-active {
     color: #6550de;
     background-color: #ffffff;
+    border: 2px solid #6550de;
   }
 
   &.modalPageButton {
